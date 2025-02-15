@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Grouping">
+ 
+  <groups>
+  <run>
+  <include name="sanity"/>
+  <include name="regression"></include>
+  </run>
+  </groups>
+  
+  
+    <classes>
+      <class name="testNG.SignUp"/>
+      <class name="testNG.tng1"/>
+      <class name="testNG.testng2"/>
+      <class name="testNG.Login"/>
+      <class name="testNG.payment"/>
+    </classes>
+  </test> <!-- Grouping -->
+</suite> <!-- Suite -->
