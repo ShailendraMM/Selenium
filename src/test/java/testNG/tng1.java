@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -31,7 +32,12 @@ void search() {
 
 @Test(priority=3 , dependsOnMethods = "login()")
 void advsearch() {
+	SoftAssert sa=new SoftAssert();
+	
+	sa.assertEquals(1, 2);
 	System.out.println("this is the advsearch method");
+	
+	
 }
 @Test(priority=4)
 void logout() {
