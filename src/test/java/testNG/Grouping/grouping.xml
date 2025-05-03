@@ -12,11 +12,11 @@
   
   
     <classes>
-      <class name="testNG.SignUp"/>
-      <class name="testNG.tng1"/>
-      <class name="testNG.testng2"/>
-      <class name="testNG.Login"/>
-      <class name="testNG.payment"/>
+      <class name="testNG.Grouping.Login"/>
+      <class name="testNG.Grouping.Signup"/>
+      <class name="testNG.Grouping.Addcart"/>
+      <class name="testNG.Grouping.Payment"/>
+      <class name="testNG.DependsOnMethod"/>
     </classes>
   </test> <!-- Grouping -->
 </suite> <!-- Suite -->

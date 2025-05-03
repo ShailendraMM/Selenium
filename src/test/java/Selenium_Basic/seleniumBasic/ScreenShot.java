@@ -34,6 +34,8 @@ public class ScreenShot {
         File SourceFile1= header.getScreenshotAs(OutputType.FILE);
         File TargetFile2=new File(System.getProperty("user.dir")+"\\screenshots\\sc9.png");
         SourceFile1.renameTo(TargetFile2);
+        
+    
 	}
 
 }

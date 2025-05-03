@@ -1,4 +1,4 @@
-package testNG;
+package testNG.ParellelExecution;
 
 import java.time.Duration;
 

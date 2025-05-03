@@ -30,7 +30,7 @@ public class JavascriptExecutor {
 		WebElement radiobtn=driver.findElement(By.xpath("//input[@id='male']"));
 		js.executeScript("arguments[0].click()",radiobtn);
 
-       
+      
 
 	}
 	

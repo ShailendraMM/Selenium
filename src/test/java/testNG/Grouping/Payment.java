@@ -1,8 +1,8 @@
-package testNG;
+package testNG.Grouping;
 
 import org.testng.annotations.Test;
 
-public class payment {
+public class Payment {
 	
 @Test(groups = {"regression","sanity"})
 void rupee() {

@@ -18,7 +18,7 @@ import org.testng.annotations.*;
 
 import net.bytebuddy.build.Plugin.Factory.UsingReflection.Priority;
 
-public class tng1 {
+public class DependsOnMethod {
 	
 @Test(priority=1 )
 void login() {

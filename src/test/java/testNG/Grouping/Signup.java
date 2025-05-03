@@ -1,22 +1,22 @@
-package testNG;
+package testNG.Grouping;
 
 import org.testng.annotations.Test;
 
-public class SignUp {
+public class Signup {
 
 	@Test(groups = "regression")
 	void signUpbymail() {
-		System.out.println("Signup by mail");
+		System.out.println("Grouping1...Signup by mail");
 	}
 
 	@Test(groups = "regression")
 	void SignUPbyfb() {
-		System.out.println("Signup by facebook");
+		System.out.println("Grouping1...Signup by facebook");
 	}
 
 	@Test(groups = "regression")
 	void signUpbytwitter() {
-		System.out.println("Signup by twitter");
+		System.out.println("Grouping1...Signup by twitter");
 	}
 
 	}

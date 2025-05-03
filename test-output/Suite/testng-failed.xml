@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="edgetest(failed)">
-    <parameter name="browser" value="edge"/>
-    <parameter name="url" value="https://facebook.com"/>
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="testNG.Dataprovider">
+      <class name="testNG.ParellelExecution">
         <methods>
-          <include name="login" invocation-numbers="0 1 2"/>
-          <include name="setup"/>
-          <include name="end"/>
+          <include name="yahoo"/>
+          <include name="webdriver"/>
         </methods>
-      </class> <!-- testNG.Dataprovider -->
+      </class> <!-- testNG.ParellelExecution -->
     </classes>
-  </test> <!-- edgetest(failed) -->
-  <test thread-count="3" parallel="tests" name="safaritest(failed)">
-    <parameter name="browser" value="safari"/>
-    <classes>
-      <class name="testNG.Dataprovider">
-        <methods>
-          <include name="login" invocation-numbers="0 1 2"/>
-          <include name="setup"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- testNG.Dataprovider -->
-    </classes>
-  </test> <!-- safaritest(failed) -->
-  <test thread-count="3" parallel="tests" name="chrometest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://google.com"/>
-    <classes>
-      <class name="testNG.Dataprovider">
-        <methods>
-          <include name="login" invocation-numbers="0 1 2"/>
-          <include name="setup"/>
-          <include name="end"/>
-        </methods>
-      </class> <!-- testNG.Dataprovider -->
-    </classes>
-  </test> <!-- chrometest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

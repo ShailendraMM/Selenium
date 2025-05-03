@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.tng1">
+      <class name="testNG.POMFramework.Logintest">
         <methods>
-          <include name="login"/>
-          <include name="advsearch"/>
+          <include name="testLogin"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testNG.tng1 -->
+      </class> <!-- testNG.POMFramework.Logintest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
